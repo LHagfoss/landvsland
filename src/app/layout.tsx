@@ -14,7 +14,7 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Japan VS Thailand",
+  title: "Japan vs Thailand",
   description: "Skole oppgave av Lucas",
 };
 

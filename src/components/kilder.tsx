@@ -2,8 +2,8 @@ import Diagram from "./diagram";
 
 export default function Kilder() {
     return (
-      <div className="bg-gray-100 p-10 mt-4 rounded-[2vw] shadow-md flex justify-between w-full h-[25vw]">
-        <div className="flex flex-col h-full justify-between">
+      <div className="bg-gray-100 p-10 mt-4 rounded-[2vw] shadow-md flex flex-col md:flex-row justify-between w-full h-[80vh] md:h-[25vw]">
+        <div className="flex flex-col md:h-full justify-between">
             <div className="flex flex-col">
                 <h3 className="text-lg font-semibold mb-2">Kilder</h3>
                 <ul className="list-disc pl-5">
@@ -47,7 +47,7 @@ export default function Kilder() {
             </div>
             <div className="">Laget av Lucas 👌</div>
         </div>
-        <div className="w-1/2">
+        <div className="w-full h-1/4 md:h-full md:w-1/2">
             <Diagram />
         </div>
       </div>
