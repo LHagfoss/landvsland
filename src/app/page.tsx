@@ -4,10 +4,10 @@ import React, { useEffect } from "react";
 import Lenis from "lenis";
 
 import Image from "next/image";
-import Japan from "@/components/Japan";
-import Thailand from "@/components/Thailand";
-import Kilder from "@/components/Kilder";
-import japanvsthailand from "@/public/image-removebg-preview.png"
+import Japan from "../components/Japan";
+import Thailand from "../components/Thailand";
+import Kilder from "../components/Kilder";
+import japanvsthailand from "../../public/image-removebg-preview.png"
 
 export default function Home() {
 
