@@ -2,6 +2,7 @@ import Image from "next/image";
 import thailandImage from "@/public/thailand.jpg";
 import { useState } from "react";
 import { easeInOut, motion } from "framer-motion";
+import ThailandDiagram from "./ThailandDiagram";
 
 export default function Thailand() {
   const [showMore, setShowMore] = useState(false);
@@ -10,6 +11,7 @@ export default function Thailand() {
     <div className="relative bg-gray-100 p-10 shadow-md rounded-[2vw] flex flex-col h-fit">
       <h3 className="mb-4 text-3xl font-semibold">Thailand</h3>
       <p className="mb-4 text-lg font-semibold">Poengsum på Demokrati-indeksen: 6.35 (2023)</p>
+      <ThailandDiagram />
       <p className="mb-4">
         Thailand har hatt flere militærkupp og politiske omveltninger de siste tiårene. Selv om det holdes valg, er det betydelige begrensninger på politisk frihet og ytringsfrihet, og det finnes utfordringer knyttet til rettssikkerhet.
       </p>
@@ -18,6 +20,7 @@ export default function Thailand() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1, ease: easeInOut }}
+        className="md:h-[12vw]"
     >
           <p className="mb-4">
             Thailands politiske system er et konstitusjonelt monarki, men har opplevd hyppige endringer i styringsform. Siden 1932 har landet gjennomgått 20 ulike grunnlover og 13 vellykkede militærkupp, noe som har ført til perioder med militærstyre og begrenset demokratisk utvikling.
@@ -36,7 +39,7 @@ export default function Thailand() {
       <Image 
         src={thailandImage} 
         alt="Scenic view of Thailand" 
-        className="w-full h-[20vw] object-cover rounded-[1vw]" 
+        className="w-full h-[20vh] md:h-[20vw] object-cover rounded-3xl md:rounded-[1vw]" 
       />
     </div>
   );

@@ -4,8 +4,8 @@ import React, { useEffect } from "react";
 import Lenis from "lenis";
 
 import Image from "next/image";
-import Japan from "@/components/japan";
-import Thailand from "@/components/thailand";
+import Japan from "@/components/Japan";
+import Thailand from "@/components/Thailand";
 import Kilder from "@/components/kilder";
 import japanvsthailand from "@/public/image-removebg-preview.png"
 
@@ -28,8 +28,10 @@ export default function Home() {
       <div className="w-full flex justify-between items-center flex-col md:flex-row">
         <div className="h-full flex flex-col">
           <h1 className="text-[10vw] md:text-[5vw] mb-2 font-bold">Japan vs Thailand</h1>
-          <p className="mb-4">
-            Jeg har valgt å sammenligne Japan og Thailand fordi de representerer to veldig forskjellige politiske systemer i Asia. Japan har et velfungerende demokrati med stabile institusjoner, mens Thailand har utfordringer med korrupsjon i både det politiske systemet og kongehuset. Dette har ført til gjentatte militærkupp og politisk ustabilitet som har hindret utviklingen av et fullverdig demokrati i Thailand.
+          <p className="mb-10">
+            Jeg har valgt å sammenligne Japan og Thailand fordi de representerer to veldig forskjellige politiske systemer i Asia. 
+            Japan har et velfungerende demokrati med stabile institusjoner, mens Thailand har utfordringer med korrupsjon i både det politiske systemet og kongehuset. 
+            Dette har ført til gjentatte militærkupp og politisk ustabilitet som har hindret utviklingen av et fullverdig demokrati i Thailand.
           </p>
         </div>
         <Image src={japanvsthailand} alt="" className="mb-4"></Image>
