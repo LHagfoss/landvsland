@@ -24,7 +24,7 @@ export default function Home() {
 
   return (
     <div className="container mx-auto p-5 py-10">
-      <h1 className="text-[6vw] md:text-2xl font-bold mb-4">Utforskning av Demokratiindeksen til FN</h1>
+      <h1 className="text-[6vw] md:text-2xl font-bold mb-4">Utforskning av Demokrati-indeksen til FN</h1>
       <div className="w-full flex justify-between items-center flex-col md:flex-row">
         <div className="h-full flex flex-col">
           <h1 className="text-[10vw] md:text-[5vw] mb-2 font-bold">Japan vs Thailand</h1>
