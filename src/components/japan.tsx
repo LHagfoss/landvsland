@@ -1,5 +1,5 @@
 import Image from "next/image";
-import japanImage from "@/public/japan.jpg";
+import japanImage from "../../public/japan.jpg";
 import { useState } from "react";
 import { easeInOut, motion } from "framer-motion";
 import JapanDiagram from "./JapanDiagram"

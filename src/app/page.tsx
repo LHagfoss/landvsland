@@ -3,10 +3,12 @@
 import React, { useEffect } from "react";
 import Lenis from "lenis";
 
+
 import Image from "next/image";
 import Japan from "../components/Japan";
 import Thailand from "../components/Thailand";
 import Kilder from "../components/Kilder";
+import LydSpiller from "../components/LydSpiller";
 import japanvsthailand from "../../public/image-removebg-preview.png"
 
 export default function Home() {
@@ -33,6 +35,7 @@ export default function Home() {
             Japan har et velfungerende demokrati med stabile institusjoner, mens Thailand har utfordringer med korrupsjon i både det politiske systemet og kongehuset. 
             Dette har ført til gjentatte militærkupp og politisk ustabilitet som har hindret utviklingen av et fullverdig demokrati i Thailand.
           </p>
+          <LydSpiller audioSrc="/audio/voice-message.ogg" />
         </div>
         <Image src={japanvsthailand} alt="" className="mb-4"></Image>
       </div>

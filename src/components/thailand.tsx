@@ -1,5 +1,5 @@
 import Image from "next/image";
-import thailandImage from "@/public/thailand.jpg";
+import thailandImage from "../../public/thailand.jpg";
 import { useState } from "react";
 import { easeInOut, motion } from "framer-motion";
 import ThailandDiagram from "./ThailandDiagram";
