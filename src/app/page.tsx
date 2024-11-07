@@ -8,9 +8,9 @@ import Image from "next/image";
 import Japan from "../components/japan";
 import Thailand from "../components/thailand";
 import Kilder from "../components/kilder";
-import LydSpiller from "../components/lydSpiller";
+import LydSpiller from "../components/LydSpiller";
 import japanvsthailand from "../../public/image-removebg-preview.png"
-import FadeIn from "@/components/fadeIn";
+import FadeIn from "../components/FadeIn";
 
 export default function Home() {
 

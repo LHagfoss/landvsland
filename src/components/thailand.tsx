@@ -2,8 +2,8 @@ import Image from "next/image";
 import thailandImage from "../../public/thailand.jpg";
 import { useState } from "react";
 import { easeInOut, motion } from "framer-motion";
-import ThailandDiagram from "./thailandDiagram";
-import FadeIn from "@/components/fadeIn";
+import ThailandDiagram from "./ThailandDiagram";
+import FadeIn from "./FadeIn";
 
 export default function Thailand() {
   const [showMore, setShowMore] = useState(false);

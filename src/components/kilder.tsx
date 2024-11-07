@@ -1,5 +1,5 @@
 import Diagram from "./diagram";
-import FadeIn from "@/components/fadeIn";
+import FadeIn from "./FadeIn";
 
 export default function Kilder() {
     return (
