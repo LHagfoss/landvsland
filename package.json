@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -16,7 +16,10 @@
     "react": "19.0.0-rc-02c0e824-20241028",
     "react-audio-player": "^0.17.0",
     "react-chartjs-2": "^5.2.0",
-    "react-dom": "19.0.0-rc-02c0e824-20241028"
+    "react-dom": "19.0.0-rc-02c0e824-20241028",
+    "react-speakup": "^1.1.2",
+    "react-speech": "^1.0.2",
+    "tts-react": "^3.0.7"
   },
   "devDependencies": {
     "typescript": "^5.6.3",

@@ -1,31 +1,25 @@
-import React, { useState, useRef } from 'react';
-import ReactAudioPlayer from 'react-audio-player';
+import React from 'react';
+import Speech from 'react-speech';
 
-export default function LydSpiller({ audioSrc }: { audioSrc: string }) {
-    const [isPlaying, setIsPlaying] = useState(false);
-    const audioRef = useRef<ReactAudioPlayer>(null);
+interface LydSpillerProps {
+    text: string;
+    className: string;
+}
 
-    const togglePlayPause = () => {
-        if (audioRef.current) {
-            if (isPlaying) {
-                audioRef.current.audioEl.current?.pause();
-            } else {
-                audioRef.current.audioEl.current?.play();
-            }
-            setIsPlaying(!isPlaying);
-        }
-    };
-
+export default function LydSpiller({ text, className }: LydSpillerProps) {
     return (
         <div>
-            <button onClick={togglePlayPause}>{isPlaying ? 'Pause' : 'Play'}</button>
-            <ReactAudioPlayer
-                ref={audioRef}
-                src={audioSrc}
-                controls={false}
-                autoPlay={false}
-                className=""
+            <Speech 
+                text={text}
+                textAsButton={true}
+                displayText="Spill Lyd"
+                voice="no-NO"
+                pitch={1}
+                rate={0.8}
+                volume={1}
+                lang="no-NO"
             />
+            <p className={className}>{text}</p>
         </div>
     );
 }

@@ -2,8 +2,8 @@ import Image from "next/image";
 import japanImage from "../../public/japan.jpg";
 import { useState } from "react";
 import { easeInOut, motion } from "framer-motion";
-import JapanDiagram from "./JapanDiagram"
-import FadeIn from "@/components/FadeIn";
+import JapanDiagram from "./japanDiagram"
+import FadeIn from "@/components/fadeIn";
 
 export default function Japan() {
   const [showMore, setShowMore] = useState(false);
