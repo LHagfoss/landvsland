@@ -1,5 +1,7 @@
 {
   "compilerOptions": {
+    "typeRoots": ["./"],
+    "types": ["react-speech-kit"],
     "target": "ES2017",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
